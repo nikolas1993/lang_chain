@@ -10,7 +10,7 @@ def scrape_linkedin_profile(linkedin_profile_url: str, mock: bool = False):
     """scrape information from a LinkedIn profiles, Manually scrape the information from the LinkedIn profile page."""
 
     if mock:
-        linkedin_profile_url = "https://gist.github.com/nikolas1993/f6eb2dcba5d702c0de55c05c4c931432#file-profile-info-json"
+        linkedin_profile_url = "https://gist.githubusercontent.com/nikolas1993/f6eb2dcba5d702c0de55c05c4c931432/raw/f5de06c30020ee7bc4fb231f82e4ec6e9659cc56/profile-info.json"
         response = requests.get(linkedin_profile_url, timeout=10)
     else:
         api_endpoint = 'https://nubela.co/proxycurl/api/v2/linkedin'
@@ -49,7 +49,7 @@ def person_lookup_endpoint():
 
 
 if __name__ == "__main__":
-    print(scrape_linkedin_profile("https://www.linkedin.com/in/nikolas-sturaro-01376515a/"))
+    print(scrape_linkedin_profile("https://www.linkedin.com/in/nikolas-sturaro-01376515a/", True))
 
     #print(person_lookup_endpoint())
 
