@@ -11,6 +11,9 @@ langchainhub = "*"
 black = "*"
 python-dotenv = "*"
 langchain-ollama = "*"
+fastapi = "*"
+uvicorn = "*"
+python-multipart = "*"
 
 [dev-packages]
 
