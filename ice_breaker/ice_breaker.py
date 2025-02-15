@@ -11,7 +11,7 @@ from third_parties.linkedin import scrape_linkedin_profile
 
 def ice_break_with(name: str) -> Tuple[Summary, str]:
     linkedin_username = linkedin_lookup_agent(name=name)
-    linkedin_data = scrape_linkedin_profile(linkedin_profile_url=linkedin_username, mock=False)
+    linkedin_data = scrape_linkedin_profile(linkedin_profile_url=linkedin_username, mock=True)
 
     summary_template: str = """
             given the LinkedIn information {information} about a person from I want you to create:
